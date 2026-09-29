@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeoBank Portal – Sign in</title>
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body>
+  <header class="top"><span class="brand">NeoBank Corporate Portal</span></header>
+  <main>
+    <h1>Sign in</h1>
+    <p class="muted">Choose how you want to sign in.</p>
+    <div class="grid cols-3 login-cards">
+      <section class="card">
+        <span class="role-tag">Corporate user</span>
+        <h2>Maker / Checker</h2>
+        <p class="muted small">Makers create payments and beneficiaries. Checkers authorize them through the bank's secure pop-up, as per your company's Mode of Operation.</p>
+        <form id="user-login">
+          <label>Username <input name="username" autocomplete="username" required></label>
+          <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+          <button type="submit">Sign in</button>
+        </form>
+        <p class="demo muted">Demo: acme.maker, acme.checker1 (A), acme.checker2 (A), acme.checker3 (B) / Pass@123</p>
+      </section>
+
+      <section class="card">
+        <span class="role-tag">Neobank admin</span>
+        <h2>Platform administration</h2>
+        <p class="muted small">Onboard corporate clients, their users and Mode of Operation, and monitor activity.</p>
+        <form id="admin-login">
+          <label>Username <input name="username" autocomplete="username" required></label>
+          <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+          <button type="submit">Sign in</button>
+        </form>
+        <p class="demo muted">Demo: nbadmin / Admin@123</p>
+      </section>
+
+      <section class="card">
+        <span class="role-tag">Bank admin</span>
+        <h2>Partner Bank Portal</h2>
+        <p class="muted small">Bank staff sign in on the bank's own portal to approve client onboarding and MOP, manage accounts and review authorizations.</p>
+        <form id="bank-login">
+          <button type="submit">Go to Bank Portal</button>
+        </form>
+        <p class="demo muted">Demo: bankadmin / Bank@123</p>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "neobank",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Corporate neobank portal with maker-checker, MOP-based authorization and a mock partner Bank Portal",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node start.js",
+    "test": "node --test"
+  }
+}
